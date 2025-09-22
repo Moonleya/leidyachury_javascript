@@ -4,10 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <title>Cotizador de Proyectos</title>
     <script src="./Js/script.js"></script>
-    <title>Javascript</title>
 </head>
 <body>
-    <h1>Avance de mi proyecto </h1>
+    <h1>Leidy Achury - Cotizador de Proyectos de Software y Hardware </h1>
+    <br><br>
+    <h2>Información del proyecto: </h2>
+     <!-- Nombre -->
+    <label for="Nombre del proyecto:">Nombre del proyecto </label>
+    <input type="text" id="nombreproyecto"> 
+    <br><br>
+     <!-- Fecha -->
+    <label for="Fecha de cotización">Fecha de Cotización</label>
+    <input type="date" id="fechacotizacion">
+    <br><br>
+    <!-- Tipo de Componente -->
+    <label for="Tipo de Componente"> Tipo de Componente </label><br>
+    <input type="radio" name="Componente1" value="web"> Web <br>
+     <input type="radio" name="componente" value="App"> App <br>
+    <input type="radio" name="componente" value="Hardware"> Homologación de Hardware <br><br>
+    
+    <h2>Idioma y Estado del Proyecto:</h2>
+    
+    <!-- Idioma -->
+    <label>Idiomas:</label><br>
+    <input type="radio" name="idioma" value="Único Idioma"> Único Idioma <br>
+    <input type="radio" name="idioma" value="Bilingüe"> Bilingüe <br>
+    <input type="radio" name="idioma" value="Multilingüe"> Multilingüe <br><br>
+
+    <!-- Estado -->
+    <label>Estado del Proyecto:</label><br>
+    <input type="radio" name="estado" value="Idea"> Solo es una idea <br>
+    <input type="radio" name="estado" value="Boceto"> Boceto ya preparado <br>
+    <input type="radio" name="estado" value="En desarrollo"> App en desarrollo <br><br>
+
+    <button onclick="mostrarResumen()">Generar Resumen en Consola</button>
+
 </body>
 </html>
